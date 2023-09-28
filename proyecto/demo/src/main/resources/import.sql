@@ -62,4 +62,4 @@ INSERT INTO products (name, description, img_url, abv, origin, price, size, stoc
 
 -- INSERT DEL REGISTRO DE UN USUARIO
 
-INSERT INTO users(name,phone, email,password)VALUES ("Esmeralda Torres","9511855797","tazitadkafe@gmail.com","123456" )
+INSERT INTO users(name,phone, email,password)VALUES ('Esmeralda Torres','9511855797','tazitadkafe@gmail.com','123456' )
