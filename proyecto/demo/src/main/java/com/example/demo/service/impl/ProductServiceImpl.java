@@ -52,9 +52,9 @@ public class ProductServiceImpl implements ProductService{
 	public Product updateProduct(Product product, Long id) {
 		Product existingProduct= getProductById(id);
 		existingProduct.setName( product.getName() );
-		existingProduct.setDescription( product.getDescription());
-		existingProduct.setImg_url( product.getImg_url());
-		existingProduct.setAbv( product.getAbv());
+		existingProduct.setStyle( product.getStyle());
+		existingProduct.setImg( product.getImg());
+		existingProduct.setABV( product.getABV());
 		existingProduct.setOrigin( product.getOrigin());
 		existingProduct.setPrice( product.getPrice());
 		existingProduct.setSize( product.getSize());

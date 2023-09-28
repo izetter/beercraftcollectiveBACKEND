@@ -25,13 +25,15 @@ public class Product
 	    {
 	        @Id
 	        @GeneratedValue(strategy= GenerationType.IDENTITY)
-	        private Long id_product;
+	        private Long id;
 	        @Column(nullable=false, length= 100)
 	        private String name;
 	        @Column(nullable=false, length= 150)
-	        private String description;
-	        private String img_url;
-	        private Double abv;
+	        private String style;
+	        private String img;
+	        
+	        @Column(name = "ABV")
+	        private Double ABV;
 	        @Column(nullable=false, length= 100)
 	        private String origin;
 	        private Double price;
@@ -42,3 +44,5 @@ public class Product
 	        		columnDefinition= "timestamp default CURRENT_TIMESTAMP")
 	      private Timestamp createdAt;
 	    }
+
+

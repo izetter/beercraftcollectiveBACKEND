@@ -56,9 +56,6 @@ public class ProductController {
 		
 
 		@DeleteMapping("{id}") // localhost:8080/api/v1/products/
-
-		
-		
 		public void deleteProduct(@PathVariable long id) {
 			productService.deleteProduct(id);
 		}
