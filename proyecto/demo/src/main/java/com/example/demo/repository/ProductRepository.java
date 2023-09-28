@@ -9,7 +9,6 @@ import com.example.demo.entity.Product;
 
 public interface ProductRepository extends CrudRepository<Product , Long>
 {
-	Product findById(long id);
-	
+		
 
 }
