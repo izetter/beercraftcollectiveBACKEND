@@ -1,6 +1,5 @@
 -- Insertar La Chingonería Pale Ale
-INSERT INTO products (name, description, img_url, abv, origin, price, size, stock) 
-VALUES ('La Chingonería Pale Ale', 'Pale Ale de La Chingonería con sabores cítricos y florales.', 'https://i.ibb.co/hmkrw39/Colima-Paramo.png', 5.2, 'México', 54.75, 355, 10);
+INSERT INTO products (name, description, img_url, abv, origin, price, size, stock) VALUES ('La Chingonería Pale Ale', 'Pale Ale de La Chingonería con sabores cítricos y florales.', 'https://i.ibb.co/hmkrw39/Colima-Paramo.png', 5.2, 'México', 54.75, 355, 10);
 
 -- Insertar Cucapá Obscura
 INSERT INTO products (name, description, img_url, abv, origin, price, size, stock) VALUES ('Cucapá Obscura', 'Cerveza Obscura de Cucapá con notas a café y caramelo.', 'https://i.ibb.co/wcMJ0S9/principia-extrasolar.png', 4.5, 'México', 41.95, 355, 60);

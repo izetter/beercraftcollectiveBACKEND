@@ -49,7 +49,7 @@ public class OrderServiceImpl implements OrderProductService{
 	@Override
 	public OrderProduct updateOrder(OrderProduct order, Long id) {
 	    OrderProduct existingOrder= getOrderById(id);
-	    existingOrder.setProducts(order.getProducts());
+	    existingOrder.setTotalAmount(order.getTotalAmount());
 		return saveOrder(existingOrder);
 	}
 

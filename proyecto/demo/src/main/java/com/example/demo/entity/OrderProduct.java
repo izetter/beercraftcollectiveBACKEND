@@ -5,8 +5,9 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import java.sql.Timestamp;
-import java.util.Set;
+import java.sql.Date;
+
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 
 @Data
@@ -21,25 +22,19 @@ public class OrderProduct {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
+    @Column(name = "purchase_date", insertable = false, updatable = false, columnDefinition = "timestamp default CURRENT_TIMESTAMP")
+    private Date purchaseDate;
+    
+    @Column(name = "total_amount")
+    private Double totalAmount;
+
     @ManyToOne
-    @JoinColumn(name = "id_user")
+    @JoinColumn(name = "fk_id_user")
+    @JsonIgnoreProperties("orders")
     private UserClient user; // Relación Many-to-One con UserClient
 
-    @ManyToMany
-    @JoinTable(
-        name = "order_product_product",
-        joinColumns = @JoinColumn(name = "order_product_id"),
-        inverseJoinColumns = @JoinColumn(name = "product_id")
-    )
-    private Set<Product> products; // Relación Many-to-Many con Product
-
-    private Double amount;
-
-    @Column(name = "created_at", insertable = false, updatable = false, columnDefinition = "timestamp default CURRENT_TIMESTAMP")
-    private Timestamp purchaseDate;
-
-   // Getters y setters
-    // ...
+    
+   
 }
 
 	 
