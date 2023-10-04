@@ -4,28 +4,33 @@
 # Beer Craft Collective
 <p><b>Repositorio del Back del proyecto Beer Craft Collective.</b></p>
 
+Funcionalidad admin CRUD a la base de datos MySQL: [click aquí](https://thebeercraftcollective.netlify.app/pages/admin/admin.html).
+
+Página de [inicio](https://thebeercraftcollective.netlify.app).
+
+<b>*</b><em>Considere que dado que el backend esta hosteado en el <ins>tier gratuito</ins> de [render.com](https://render.com/), el servicio
+se desactiva automáticamente luego de 15 minutos de inactividad, por lo que al visitar ya sea [la página de inicio](https://thebeercraftcollective.netlify.app)
+o la página [admin CRUD](https://thebeercraftcollective.netlify.app/pages/admin/admin.html) por primera vez, se pide de favor espere un par de minutos y recargue
+la página para poder ver, editar, y añadir productos, gracias.</em>
+
+Ver el repositorio del [front end aquí](https://github.com/izetter/beercraftcollective)
+
 # Miembros del Equipo:
 <ul>
-<li>Esmeralda Torres</li>
-<li>Citlali Gonzalez</li>
-<li>Eduardo Garcia</li>
 <li>Isay Zetter</li>
+<li>Esmeralda Torres</li>
+<li>Eduardo Garcia</li>
+<li>Citlali Gonzalez</li>
 <li>Diego Herrera</li>
 
 </ul>
 
 # Tecnologías utilizadas:
 
-Frontend:
 <ul>
 <li>Java</li>
-<li>Springboot</li>
+<li>Spring Boot</li>
 <li>MySQL</li>
-</ul>
-
-Otras:
-<ul>
-<li>Eclipse</li>
 <li>Git</li>
 </ul>
 
